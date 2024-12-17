@@ -14,11 +14,17 @@ var rootCmd = &cobra.Command{
 	about his account events such as posting different repos or
 	making commits and much more. 
 	Enjoy the CLI app!`,
-} 
+
+	Run: func(cmd *cobra.Command, args []string) {
+		if AuthorPersistentFlag {
+			fmt.Println("Author of the project is PureTeamLead")
+		}
+	},
+}
 
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
-		fmt.Fprintln(os.Stderr, err)
+		// fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}
 }
