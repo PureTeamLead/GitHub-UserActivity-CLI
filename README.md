@@ -48,5 +48,3 @@ Credentials flag:
 # ./github-activity get_events username
 ./github-activity get_events PureTeamLead
 ```
-
-The task of the project was taken from [Roadmap](https://roadmap.sh/projects/github-user-activity)
