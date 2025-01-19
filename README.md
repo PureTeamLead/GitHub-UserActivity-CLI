@@ -1,4 +1,4 @@
-# GitHub activity Tracker - CLI application
+# Github activity Tracker - CLI application
 
 ## How to Run?
 
